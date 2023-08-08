@@ -1,0 +1,22 @@
+.competence {
+  &__button {
+    color: rgb(178, 174, 174);
+    border: 1px solid rgb(128, 58, 115);
+
+    padding: 10px;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 0 0 rgb(128, 58, 115);
+    background-color: rgba(32, 13, 35, 0);
+  }
+  &__title {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+}
+@media (max-width: 480px) {
+  .competence {
+    &__button {
+      width: 50%;
+    }
+  }
+}

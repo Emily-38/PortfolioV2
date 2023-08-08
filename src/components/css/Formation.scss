@@ -1,0 +1,37 @@
+.formation {
+  &__contenu {
+    position: relative;
+    color: rgb(178, 174, 174);
+    border: 1px solid rgb(128, 58, 115);
+    margin: 16px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0 0 rgb(128, 58, 115);
+
+    &__title {
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    &__cercle {
+      content: attr(p);
+      position: absolute;
+      top: 440px;
+      color: rgb(128, 58, 115);
+    }
+    li {
+      display: inline-block;
+    }
+  }
+
+  &--top {
+    grid-row: 1;
+    border-bottom: 20px solid rgb(128, 58, 115);
+    margin-bottom: calc(20px / -2);
+  }
+
+  &--bottom {
+    grid-row: 2;
+    border-top: 20px solid rgb(128, 58, 115);
+    margin-top: calc(20px / -2);
+  }
+}

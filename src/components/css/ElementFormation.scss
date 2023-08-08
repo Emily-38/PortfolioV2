@@ -1,0 +1,20 @@
+$timeline-thickness: 20px;
+$timeline-color: rgb(128, 58, 115);
+.timeline {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.formation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.arrow {
+  position: absolute;
+  left: 90%;
+  color: $timeline-color;
+}

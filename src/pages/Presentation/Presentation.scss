@@ -1,0 +1,70 @@
+.presentation {
+  color: rgb(178, 174, 174);
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &__title {
+    position: relative;
+    font-size: 400%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &::after {
+      content: attr(h1);
+      position: absolute;
+      border-bottom: 6px solid rgb(128, 58, 115);
+      box-shadow: 2px 2px 4px rgba(128, 58, 115, 0.794);
+      width: 40%;
+      bottom: -30%;
+      right: 60%;
+      z-index: -1;
+    }
+  }
+  &__text {
+    background-color: rgba(255, 255, 255, 0.071);
+    width: 45%;
+    font-size: 210%;
+    padding: 25px;
+  }
+  &__css {
+    position: absolute;
+    left: 75%;
+    top: 59%;
+  }
+  &__html {
+    position: absolute;
+    left: 65%;
+    top: 43%;
+  }
+  &__js {
+    position: absolute;
+    left: 65%;
+    bottom: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .presentation {
+    padding: 2px;
+    &__title {
+      font-size: 180%;
+      padding-bottom: 3%;
+    }
+    &__text {
+      width: 85%;
+      font-size: 120%;
+    }
+    &__css {
+      left: 40%;
+      top: 70%;
+    }
+    &__html {
+      left: 10%;
+      top: 60%;
+    }
+    &__.js {
+      left: 70%;
+    }
+  }
+}
